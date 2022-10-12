@@ -1,0 +1,3 @@
+- name: set port
+  shell:
+    sed -i "s/set_port/"{{ host_port }}"/g" /tmp/docker-compose.yml

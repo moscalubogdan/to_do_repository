@@ -1,0 +1,10 @@
+- name: Install Docker
+  package:
+    name: [ 'docker-ce', 'docker-ce-cli', 'containerd.io', 'docker-compose-plugin' ]
+    state: latest
+
+- name: Start Docker service
+  service:
+    name: docker
+    state: started
+    enabled: yes

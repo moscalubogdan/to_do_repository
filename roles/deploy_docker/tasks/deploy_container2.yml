@@ -1,0 +1,6 @@
+- name: Run container
+  become: True
+  shell:
+    cmd: "docker compose up -d"
+    chdir: /tmp/
+

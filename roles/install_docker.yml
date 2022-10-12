@@ -1,0 +1,6 @@
+---
+- name: Install docker on CENTOS
+  hosts: localhost 
+  become: yes
+  roles:
+    - install_docker

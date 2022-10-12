@@ -1,0 +1,14 @@
+- name: copy Docker files
+  become: true
+  copy:
+    src: files/{{ item }}
+    dest: /tmp/
+  with_items:
+  - docker-compose.yml
+  - app.tar
+
+- name: extract tar file
+  unarchive:
+    src: /tmp/app.tar
+    dest: /tmp
+    remote_src: yes

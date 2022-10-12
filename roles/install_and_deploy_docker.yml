@@ -1,0 +1,6 @@
+---
+- name: install and deploy docker container
+  hosts: all
+  roles:
+    - deploy_docker
+    - install_docker

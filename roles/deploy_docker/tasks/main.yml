@@ -1,0 +1,5 @@
+---
+# tasks file for deploy_docker
+- import_tasks: copy_files.yml
+- import_tasks: set_port.yml
+- import_tasks: deploy_container2.yml
